@@ -1,8 +1,8 @@
 class YesssQuotaWidget2 < Formula
   desc "macOS menu bar app for YESSS mobile quota"
   homepage "https://github.com/bot2904/yesss-quota-widget2"
-  url "https://github.com/bot2904/yesss-quota-widget2/releases/download/v0.1.1/YESSS-Quota-Tray-v0.1.1-macos.zip"
-  sha256 "f6fa4f1560bb605be03983ca89d32b520d8ace28ac6797cf621f832d1d402437"
+  url "https://github.com/bot2904/yesss-quota-widget2/releases/download/v0.1.2/YESSS-Quota-Tray-v0.1.2-macos.zip"
+  sha256 "c296b386b2fcf840cdd3e00d0daf24c1b7e4a151f27198bbed3a3c2e0b8408a1"
 
   depends_on macos: :ventura
 
