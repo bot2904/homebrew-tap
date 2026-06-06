@@ -8,4 +8,4 @@ brew install yesss-quota-widget2
 open "$(brew --prefix yesss-quota-widget2)/Applications/YESSS Quota Tray.app"
 ```
 
-The formula builds the Swift package from source and installs the macOS menu bar app into the formula prefix.
+The formula downloads the prebuilt macOS app bundle from the GitHub release and installs it into the formula prefix.

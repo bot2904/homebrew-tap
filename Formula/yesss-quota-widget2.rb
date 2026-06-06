@@ -1,14 +1,13 @@
 class YesssQuotaWidget2 < Formula
   desc "macOS menu bar app for YESSS mobile quota"
   homepage "https://github.com/bot2904/yesss-quota-widget2"
-  url "https://github.com/bot2904/yesss-quota-widget2/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "50e2a73765e891147e375221ad00c31aa328c927e7370c6f167b7fd703812d9b"
-  head "https://github.com/bot2904/yesss-quota-widget2.git", branch: "main"
+  url "https://github.com/bot2904/yesss-quota-widget2/releases/download/v0.1.1/YESSS-Quota-Tray-v0.1.1-macos.zip"
+  sha256 "f6fa4f1560bb605be03983ca89d32b520d8ace28ac6797cf621f832d1d402437"
 
   depends_on macos: :ventura
 
   def install
-    system "scripts/install_app.sh", "--target", prefix/"Applications", "--no-open"
+    (prefix/"Applications").install "YESSS Quota Tray.app"
     (bin/"yesss-quota-tray").write <<~SH
       #!/bin/sh
       exec "#{prefix}/Applications/YESSS Quota Tray.app/Contents/MacOS/YesssTrayApp" "$@"
